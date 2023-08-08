@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', contentLoaded);
 function contentLoaded(event) {
   document.getElementById('name').addEventListener("keyup", keyUp);
 }
-
+// keyup: xảy ra khi nguoi dùng nhả phím sau khi nhập nhập dữ liệu vào phần tử
 function keyUp(event) {
   calculateNumericOutput();
 }
@@ -25,7 +25,7 @@ function calculateNumericOutput() {
     totalNameValue += student.name.charCodeAt(i);
   }
 
-  // Insert result into page
+  // Insert result into page, gan ket qua vao phan tu co id = output
   var output = "Total Numeric value of person's name is " + totalNameValue;
   document.getElementById('output').innerText = output;
 }
